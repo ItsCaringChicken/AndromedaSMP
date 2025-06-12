@@ -391,7 +391,7 @@
         }
 
         function copyServerIP() {
-            const serverIP = 'AndromedaSMP.valksystems.pro';
+            const serverIP = 'AndromedaSMPs2.valksystems.pro';
             navigator.clipboard.writeText(serverIP).then(() => {
                 const button = event.target;
                 const originalText = button.innerHTML;
@@ -411,7 +411,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             createStars();
             fetchServerStatus();
-            setInterval(fetchServerStatus, 1000);
+            setInterval(fetchServerStatus, 60000);
         });
 
         document.addEventListener('mousemove', (e) => {
